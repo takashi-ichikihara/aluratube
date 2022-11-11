@@ -1,4 +1,4 @@
-Aluratube
+🎥 Site baseado no YouTube, construído durante a Imersão React da Alura.
 
 | :placard: Vitrine.Dev |     |
 | -------------  | --- |
