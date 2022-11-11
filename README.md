@@ -8,3 +8,4 @@
 | :fire: Desafio     | https://www.alura.com.br/imersao-react
 
 <!-- Inserir imagem com a #vitrinedev ao final do link -->
+![image](https://github.com/takashi-ichikihara/aluratube/blob/main/pages/images/print.png?raw=true#vitrinedev)
