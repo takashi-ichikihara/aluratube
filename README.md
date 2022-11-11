@@ -1,4 +1,5 @@
 🎥 Site baseado no YouTube, construído durante a Imersão React da Alura.
+(Está em andamento)...
 
 | :placard: Vitrine.Dev |     |
 | -------------  | --- |
