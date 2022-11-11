@@ -1,15 +1,13 @@
 import config from '../config.json';
 import styled from 'styled-components';
-import { CSSReset } from './src/components/CSSReset';
-import Menu from './src/components/Menu';
-import { StyledTimeline } from './src/components/Timeline';
+import { CSSReset } from '../src/components/CSSReset';
+import Menu from '../src/components/Menu';
+import { StyledTimeline } from '../src/components/Timeline';
 
 function HomePage() {
   const estilosDaHomePage = {
-    // backgroundColor: "red"
+    //backgroundColor: "red "
   };
-
-  // console.log(config.playlists);
 
   return (
     <>
@@ -19,26 +17,17 @@ function HomePage() {
           display: 'flex',
           flexDirection: 'column',
           flex: 1,
-          // backgroundColor: "red",
         }}
       >
         <Menu />
         <Header />
-        <Timeline playlists={config.playlists}>Conteúdo</Timeline>
+        <Timeline playlists={config.playlists} />
       </div>
     </>
   );
 }
 
 export default HomePage;
-
-// function Menu() {
-//     return (
-//         <div>
-//             Menu
-//         </div>
-//     )
-// }
 
 const StyledHeader = styled.div`
   img {
@@ -55,10 +44,12 @@ const StyledHeader = styled.div`
     gap: 16px;
   }
 `;
+
 function Header() {
   return (
     <StyledHeader>
-      {/* <img src="banner" /> */}
+      {/*<img src="banner" />*/}
+
       <section className="user-info">
         <img src={`https://github.com/${config.github}.png`} />
         <div>
@@ -70,17 +61,14 @@ function Header() {
   );
 }
 
-function Timeline(propriedades) {
-  // console.log("Dentro do componente", propriedades.playlists);
-  const playlistNames = Object.keys(propriedades.playlists);
-  // Statement
-  // Retorno por expressão
+function Timeline(props) {
+  const playlistNames = Object.keys(props.playlists);
+
   return (
     <StyledTimeline>
       {playlistNames.map((playlistName) => {
-        const videos = propriedades.playlists[playlistName];
-        console.log(playlistName);
-        console.log(videos);
+        const videos = props.playlists[playlistName];
+
         return (
           <section>
             <h2>{playlistName}</h2>
@@ -93,6 +81,7 @@ function Timeline(propriedades) {
                   </a>
                 );
               })}
+              ;
             </div>
           </section>
         );
