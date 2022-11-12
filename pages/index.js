@@ -2,7 +2,7 @@ import React from 'react';
 import config from '../config.json';
 import styled from 'styled-components';
 import Menu from '../src/components/Menu';
-import { StyledTimeline } from './src/components/Timeline';
+import { StyledTimeline } from '../src/components/Timeline';
 
 function HomePage() {
   const estilosDaHomePage = {
