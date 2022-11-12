@@ -1,4 +1,8 @@
 {
+  "engines": {
+    "node": "^16.17.1",
+    "npm": "^8.15."
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
