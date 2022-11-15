@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const StyledRegisterVideo = styled.div`
   .add-video {
@@ -26,7 +26,7 @@ export const StyledRegisterVideo = styled.div`
     border: none;
     cursor: pointer;
   }
-  button[type='submit'] {
+  button[type="submit"] {
     background-color: red;
     padding: 8px 16px;
     border: none;
@@ -37,12 +37,10 @@ export const StyledRegisterVideo = styled.div`
   form {
     width: 100%;
     padding: 5%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0,0,0,0.5);
     position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    top: 0; bottom: 0;
+    left: 0; right: 0;
     z-index: 100;
     display: flex;
     justify-content: center;
