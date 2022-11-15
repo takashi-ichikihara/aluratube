@@ -1,6 +1,7 @@
 import React from 'react';
 import { StyledRegisterVideo } from './styles';
 
+// CUstom Hook
 function useForm(propsDoForm) {
   const [values, setValues] = React.useState(propsDoForm.initialValues);
 
@@ -14,6 +15,9 @@ function useForm(propsDoForm) {
         ...values,
         titulo: value,
       });
+    },
+    clearForm() {
+      setValues({});
     },
   };
 }
@@ -40,10 +44,13 @@ export default function RegisterVideo() {
         <form
           onSubmit={(evento) => {
             evento.preventDefault();
+            setFormVisivel(false);
+            formCadastro.clearForm();
           }}
         >
           <div>
             <button
+              type="button"
               className="close-modal"
               onClick={() => setFormVisivel(false)}
             >
